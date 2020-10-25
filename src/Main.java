@@ -1,15 +1,11 @@
+import tech.itpark.ATM.ATM;
+
 public class Main {
     public static void main(String[] args) {
-        Balance balance = new Balance(100.0);
-        double balanceInfo = balance.getBalance();
-        double balanceNew = balance.setBalance(-500);
-
-
-
-        System.out.println(balance);
-        System.out.println(balance.getBalance());
-        System.out.println(balance.setBalance());
-        System.out.println(balance);
+        ATM UseATM = new ATM();
+        double balance = UseATM.ATM(5000);
+        String withdraw = UseATM.withdraw(5001);
+        double refill = UseATM.refill(100);
 
 
     }
