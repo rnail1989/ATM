@@ -10,7 +10,7 @@ public class ATM {
     }
     public String withdraw(double amount){
         if (this.balance<amount) {
-            return ("Недостаточно средств");
+            return ("Недостаточно средств, Ваш баланс:"+this.balance);
 
         }
         return null;
