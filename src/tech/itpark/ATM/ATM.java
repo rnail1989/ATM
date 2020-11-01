@@ -8,12 +8,13 @@ public class ATM {
 
         return balance;
     }
-    public String withdraw(double amount){
+    public int withdraw(double amount){
         if (this.balance<amount) {
-            return ("Недостаточно средств, Ваш баланс:"+this.balance);
+            return 0;
+
 
         }
-        return null;
+        return 0;
     }
     public double refill(double amount){
         this.balance=amount+balance;
