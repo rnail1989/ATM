@@ -8,7 +8,7 @@ public class Main {
         double refill = UseATM.refill(100);
 
         System.out.println("Ваш доступный баланс:"+refill);
-        System.out.println(withdraw);
+
 
 
     }
